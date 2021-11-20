@@ -58,6 +58,7 @@ let package = Package(
                 "ComposableArchitecture",
                 "Notifications",
                 "Storage",
+                "EstatesProvider",
             ],
             path: "Sources/CLI"
         ),

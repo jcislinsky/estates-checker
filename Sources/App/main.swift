@@ -4,7 +4,7 @@ import CLI
 import EstatesProvider
 import Persistence
 
-var store = Store(initialValue: AppState(initialEstatesHash: -1, estates: []), reducer: logging(appReducer))
+var store = Store(initialValue: AppState(initialEstatesHash: -1, estates: []), reducer: appReducer)
 
 // Loads data from storage
 store.send(.persistence(.loadEstatesFromStorage))
